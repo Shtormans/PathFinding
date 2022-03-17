@@ -19,10 +19,14 @@ namespace PathFinding
 
         private void startButton_Click(object sender, EventArgs e)
         {
-            PathFinder pathFinder = new PathFinder();
+            int height = (int)heightInput.Value;
+            int width = (int)widthInput.Value;
+
+            PathFinder pathFinder = new PathFinder(height, width);
             pathFinder.Show();
-            pathFinder.Width = (int)widthInput.Value;
+            this.Hide();
             pathFinder.Height = (int)heightInput.Value;
+            pathFinder.Width = (int)widthInput.Value;
         }
     }
 }
