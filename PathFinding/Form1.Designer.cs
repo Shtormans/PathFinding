@@ -47,7 +47,7 @@ namespace PathFinding
             0,
             0});
             this.heightInput.Minimum = new decimal(new int[] {
-            400,
+            700,
             0,
             0,
             0});
@@ -55,7 +55,7 @@ namespace PathFinding
             this.heightInput.Size = new System.Drawing.Size(120, 20);
             this.heightInput.TabIndex = 0;
             this.heightInput.Value = new decimal(new int[] {
-            400,
+            700,
             0,
             0,
             0});

@@ -8,3 +8,14 @@ F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.csproj.GenerateResourc
 F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.csproj.CoreCompileInputs.cache
 F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.exe
 F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.pdb
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\obj\Debug\PathFinding.csprojAssemblyReference.cache
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\obj\Debug\PathFinding.Form1.resources
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\obj\Debug\PathFinding.PathFinder.resources
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\obj\Debug\PathFinding.Properties.Resources.resources
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\obj\Debug\PathFinding.csproj.GenerateResource.cache
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\obj\Debug\PathFinding.csproj.CoreCompileInputs.cache
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\obj\Debug\PathFinding.exe
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\obj\Debug\PathFinding.pdb
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\bin\Debug\PathFinding.exe.config
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\bin\Debug\PathFinding.exe
+C:\Users\USER\Desktop\Programming\PathFinding\PathFinding\bin\Debug\PathFinding.pdb

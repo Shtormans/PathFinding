@@ -43,6 +43,7 @@ namespace PathFinding
             this.borderButton.TabIndex = 0;
             this.borderButton.Text = "button1";
             this.borderButton.UseVisualStyleBackColor = true;
+            this.borderButton.Click += new System.EventHandler(this.BorderButton_Click);
             // 
             // starPointButton
             // 
@@ -52,6 +53,7 @@ namespace PathFinding
             this.starPointButton.TabIndex = 1;
             this.starPointButton.Text = "button2";
             this.starPointButton.UseVisualStyleBackColor = true;
+            this.starPointButton.Click += new System.EventHandler(this.StarPointButton_Click);
             // 
             // endPointButton
             // 
@@ -61,6 +63,7 @@ namespace PathFinding
             this.endPointButton.TabIndex = 2;
             this.endPointButton.Text = "button3";
             this.endPointButton.UseVisualStyleBackColor = true;
+            this.endPointButton.Click += new System.EventHandler(this.EndPointButton_Click);
             // 
             // startButton
             // 
@@ -70,6 +73,7 @@ namespace PathFinding
             this.startButton.TabIndex = 3;
             this.startButton.Text = ">";
             this.startButton.UseVisualStyleBackColor = true;
+            this.startButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
             // PathFinder
             // 
@@ -82,6 +86,7 @@ namespace PathFinding
             this.Controls.Add(this.borderButton);
             this.Name = "PathFinder";
             this.Text = "PathFinder";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PathFinder_FormClosing);
             this.ResumeLayout(false);
 
         }
