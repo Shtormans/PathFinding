@@ -1,0 +1,10 @@
+F:\Sasha c#\PathFinding\PathFinding\bin\Debug\PathFinding.exe.config
+F:\Sasha c#\PathFinding\PathFinding\bin\Debug\PathFinding.exe
+F:\Sasha c#\PathFinding\PathFinding\bin\Debug\PathFinding.pdb
+F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.csproj.AssemblyReference.cache
+F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.Form1.resources
+F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.Properties.Resources.resources
+F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.csproj.GenerateResource.cache
+F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.csproj.CoreCompileInputs.cache
+F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.exe
+F:\Sasha c#\PathFinding\PathFinding\obj\Debug\PathFinding.pdb
