@@ -40,10 +40,11 @@ namespace PathFinding
         private bool startPointExist = false;
         private bool endPointExist = false;
         private Point startPointPosition;
+        Form1 form1;
 
         private PathButton[,] buttons;
 
-        public PathFinder(int height, int width)
+        public PathFinder(int height, int width, Form1 form1)
         {
             InitializeComponent();
 
@@ -53,13 +54,26 @@ namespace PathFinding
             this.height = height;
             this.width = width;
 
+            this.form1 = form1;
+
             matrixHeight = (height - borderLength - topMargin) / buttonSize - 1;
             matrixWidth = (width - borderLength * 2) / buttonSize - 1;
+
+            ChangeButtonsColor();
 
             buttons = new PathButton[matrixHeight, matrixWidth];
 
             InitializeScreen();
         }
+
+        private void ChangeButtonsColor()
+        {
+            rubberButton.BackColor = unusedColor;
+            borderButton.BackColor = borderColor;
+            startPointButton.BackColor = startPointColor;
+            endPointButton.BackColor = endPointColor;
+        }
+
         private void InitializeScreen()
         {
             for (int i = 0; i < matrixHeight; i++)
@@ -102,9 +116,23 @@ namespace PathFinding
 
                     endPointExist = true;
                 }
+                else if (buttons[i, j].ButtonStatus == Status.startPoint)
+                {
+                    startPointExist = false;
+                }
+                else if (buttons[i, j].ButtonStatus == Status.endPoint)
+                {
+                    endPointExist = false;
+                }
 
                 buttons[i, j].ChangenStatus(currentStatus, currentColor);
             }
+        }
+
+        private void Button2_Click(object sender, EventArgs e)
+        {
+            currentStatus = Status.unused;
+            currentColor = unusedColor;
         }
 
         private void BorderButton_Click(object sender, EventArgs e)
@@ -125,9 +153,32 @@ namespace PathFinding
             currentColor = endPointColor;
         }
 
+        private void ChangeConfigurationsButton_Click(object sender, EventArgs e)
+        {
+            form1.Show();
+            this.Close();
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < matrixHeight; i++)
+            {
+                for (int j = 0; j < matrixWidth; j++)
+                {
+                    buttons[i, j].ChangenStatus(Status.unused, unusedColor);
+                }
+            }
+
+            startPointExist = false;
+            endPointExist = false;
+        }
+
         private void PathFinder_FormClosing(object sender, FormClosingEventArgs e)
         {
-            System.Windows.Forms.Application.Exit();
+            if (!form1.Visible)
+            {
+                System.Windows.Forms.Application.Exit();
+            }
         }
 
         private void StartButton_Click(object sender, EventArgs e)

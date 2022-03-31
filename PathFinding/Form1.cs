@@ -22,7 +22,7 @@ namespace PathFinding
             int height = (int)heightInput.Value;
             int width = (int)widthInput.Value;
 
-            PathFinder pathFinder = new PathFinder(height, width);
+            PathFinder pathFinder = new PathFinder(height, width, this);
             pathFinder.Show();
             this.Hide();
             pathFinder.Height = (int)heightInput.Value;
